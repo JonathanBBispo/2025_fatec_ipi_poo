@@ -16,5 +16,10 @@ def menu():
     elif escolha == 2:
         num1 = int(input("Insira o primeiro número da subtração: "))
         num2 = int(input("Insira o segundo número da soma: "))
-        print("Resultado: " + str(calculadora.subtrair(num1, num2)))              
+        print("Resultado: " + str(calculadora.subtrair(num1, num2)))
+        
+    elif escolha == 3:
+        num1 = int(input("Digite o primeiro número da multiplicação: "))
+        num2 = int(input("Digite o segundo número da multiplicação: "))
+        print("Resultado: " + str(calculadora.multiplicar(num1, num2)))
 menu()
