@@ -2,8 +2,22 @@ class LivroDeNotas{
 
     private String nomeDaDisciplina = null;
 
-    public void setNomeDaDisciplina(String nomeDaDisciplina){
-        this.nomeDaDisciplina = nomeDaDisciplina;
+    //construtor padrão (lista de parâmetros vazia)
+    public LivroDeNotas(String nomeDaDisciplina){
+        setNomeDaDisciplina(nomeDaDisciplina);
+
+    }
+
+    //setter
+    public void setNomeDaDisciplina(String n){
+        if(n.length() >= 3){
+            nomeDaDisciplina = n;
+        }
+    }
+
+    //getter
+    public String getNomeDaDisciplina(){
+        return nomeDaDisciplina;
     }
 
     public void exibirMensagem(){
