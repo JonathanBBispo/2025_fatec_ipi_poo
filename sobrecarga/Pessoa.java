@@ -13,7 +13,7 @@ public class Pessoa {
     public Pessoa(String nome, int idade, char sexo){
         System.out.println("String, int, char");
         this.nome = nome;
-        this.idade = idade;    
+        this.idade = idade;
         this.sexo = sexo;
     }
 
